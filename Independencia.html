@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guatemala Indepedencia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+        html {
+            background-color: #F2F2F2;
+        }
+        body {
+            font-family: Arial, sans-serif;
+
+        }
+        header{
+             background-color: #00A6D6; 
+             padding: 10px; 
+            text-align: center; 
+        }
+        h1 {
+            color: #FFFFFF;
+            background-color: #00A6D6;
+            text-align: center;
+            font-size: 100px;
+            font-family: "Fascinate Inline", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0;
+            padding: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        nav {
+            text-align: center;
+            background-color: #00A6D6;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 18px;
+            background-color: #3B8C4E;
+            color: white;
+            border: 1px solid rgb(100, 100, 0);
+            text-shadow: 0px 1px white;
+            width: 180px;
+            display: inline-block;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 1px 1px darkGreen, inset 0 1px 0 honeyDew;
+            margin: 5px;
+        }
+
+        nav a:hover {
+            background-image: linear-gradient(to top, red, blue);
+        }
+        nav a:visited {
+            color: white; 
+            }
+        .contenedor {
+            display: flex; 
+            padding: 20px; 
+        }
+
+        #Seccion1 {
+            width: 70%; 
+            background-color: #FAF4E1;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            color: #2E8B57;
+            padding: 20px; 
+        }
+
+        aside {
+            width: 25%; 
+            background-color: #D3F2FF;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            color: #333333;
+            padding: 20px;
+            margin-left: 20px; 
+            align-self: flex-start; 
+
+        }
+
+        footer {
+            background-color: #00A6D6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        h2 {
+            color: #00A6D6;
+        }
+
+        p, ol, ul {
+            color: #4A4A4A;
+            text-align: justify;
+
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            border-radius: 8px; 
+            margin: 20px 50px 20px 10px; 
+
+        }
+
+        h3 {
+            color: #2E8B57;
+        }
+        .video-section {
+            background-color: #FAF4E1; 
+            padding: 20px; 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+
+        iframe {
+            border: 2px solid #4CAF50; 
+            border-radius: 8px; 
+        }
+        
+        .audio-controls {
+            background-color: #00A6D6; /* Color verde para el contenedor de audio */
+            padding: 10px; /* Espaciado interno */
+            text-align: center; /* Centra el texto dentro del contenedor */
+            border-radius: 5px; /* Bordes redondeados */
+        }
+
+/* Estilo para los botones */
+        .audio-controls button {
+            margin: 0 5px; /* Margen entre los botones */
+            padding: 10px 15px; /* Espaciado interno de los botones */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            background-color: #F5E3C8;
+        }
+
+        .audio-controls button:hover {
+            background-color: #45a049; /* Cambia el color al pasar el mouse */
+            color: white; /* Cambia el texto a blanco al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <h1>Guatemala</h1>
+    <div class="audio-controls">
+    <!-- Etiqueta de audio con reproducción automática, bucle y sin controles -->
+    <audio id="musica-fondo" src="himno.mp3" autoplay loop></audio>
+    <button id="iniciar-musica">🎵 Iniciar Música</button>
+    <!-- Botones personalizados para controlar la música -->
+    <button id="boton-mute">🔊 Silenciar</button>
+    <button id="subir-volumen">🔊 Subir Volumen</button>
+    <button id="bajar-volumen">🔉 Bajar Volumen</button>
+</div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="Comida.html">Comida Tradicional</a>
+        <a href="Lugares.html">Lugares Turísticos</a>
+        <a href="Costumbres.html">Costumbres</a>
+        <a href="Flora.html">Flora y Fauna</a>
+        <a href="Historia.html">Historia</a>
+        <a href="Conflictos.html">Conflictos</a>
+        <a href="Independencia.html">Independencia</a>
+    </nav>
+
+    <div class="contenedor">
+        <section id="Seccion1">
+            <h2>Independencia de Guatemala</h2>
+            <p>La independencia de Guatemala, lograda el 15 de septiembre de 1821, marcó un hito en la historia de Centroamérica. Fue el resultado de una serie de cambios políticos 
+                y sociales que sacudieron a las colonias españolas en América, influidos por las ideas de la Ilustración, las revoluciones en Estados Unidos y Francia, y las guerras de independencia en Sudamérica. Este acontecimiento no solo dio fin a más de 300 años de dominio colonial español, sino que también inauguró un complejo proceso de construcción nacional.</h3>
+
+            <h3>Contexto Histórico</h3>
+            <p>A principios del siglo XIX, las colonias en América comenzaron a cuestionar el poder de la monarquía española, influenciadas por las ideas liberales y revolucionarias de Europa y América. Las tensiones en Guatemala aumentaron debido al debilitamiento del imperio español y los movimientos independentistas que surgieron en México y el sur del continente.</p>
+
+            <h3>La Proclamación de Independencia</h3>
+            <p>El 15 de septiembre de 1821, los representantes de las provincias centroamericanas se reunieron en la ciudad de Guatemala para firmar el acta de independencia. Este documento declaraba la separación de España y fue aceptado por gran parte de la élite criolla sin enfrentamientos armados, a diferencia de lo que sucedió en otros países de América Latina.</p>
+
+           <h3>Unión al Imperio Mexicano y Disolución</h3>
+            <p>Tras la proclamación, Guatemala y las otras provincias centroamericanas optaron por unirse brevemente al Imperio Mexicano de Agustín de Iturbide. Sin embargo, esta unión duró poco tiempo, y en 1823 las provincias se reorganizaron como las Provincias Unidas de Centroamérica, un experimento que duró hasta 1839.</p>
+
+            <h3>Legado de la Independencia</h3>
+            <p>a independencia de Guatemala marcó el inicio de un proceso de construcción nacional lleno de retos políticos y sociales. A pesar de las dificultades, este evento sigue siendo un símbolo de soberanía y libertad, conmemorándose cada año el 15 de septiembre como un día de orgullo patrio.</p>
+            <img src="guatemala.jpg" alt="guatemala"><br>
+
+            <h2>Personajes historicos</h2>
+            <p>La independencia de Guatemala, proclamada el 15 de septiembre de 1821, marcó un hito crucial en la historia del país y de Centroamérica. Este proceso no fue un acontecimiento aislado, sino el resultado de una serie de movimientos sociales, políticos y militares que involucraron a destacados líderes y figuras históricas. Estos personajes, provenientes de diversos ámbitos como la política, la religión y la milicia, jugaron un papel fundamental en la lucha por la autonomía y la creación de una nación soberana.</p>
+
+            <h3>Manuel José Arce</h3>
+            <p> Fue un líder destacado en la lucha por la independencia y uno de los firmantes del Acta de Independencia. Arce promovió la unificación de las Provincias Unidas de Centroamérica y defendió la independencia ante las amenazas del imperio mexicano.</p>
+            <img src="manuel.jpg" alt="Manuel Jose Arce"><br>
+
+            <h3>Rafael Carrera</h3>
+            <p>Aunque Carrera se opuso inicialmente a la independencia, se convirtió en un importante líder en la política guatemalteca posterior. Su gobierno ayudó a estabilizar el país en un período de conflictos internos.</p>
+            <img src="rafael.jpg" alt="Rafael Carrera"><br>
+
+            <h3>Mariano Gálvez</h3>
+            <p>Se convirtió en una figura clave en la política guatemalteca después de la independencia. Gálvez impulsó reformas liberales y modernizó el sistema educativo del país.</p>
+            <img src="mariano.jpg" alt="Mariano Galvez"><br>
+
+            <section class="video-section">
+                <iframe width="100%" height="800px" src="https://www.youtube.com/embed/koIjcep1I4A?si=6zudJ5QgjgqdNuSd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        
+        </section>
+        <aside>
+            <h2>Datos Curiosos</h2>
+            <ul>
+                <li>Acta sin derramamiento de sangre: A diferencia de otros países latinoamericanos, la independencia de Guatemala se logró de manera pacífica, sin enfrentamientos armados, a través de la firma del Acta de Independencia el 15 de septiembre de 1821.</li> 
+                <br>
+                <li>El campanazo de independencia: La leyenda dice que la independencia fue anunciada con un simbólico campanazo dado por María Dolores Bedoya, quien, al anochecer del 14 de septiembre de 1821, recorrió las calles de la ciudad de Guatemala convocando a las personas a la Plaza Mayor.</li>
+                <br>
+               <li>Provincias Unidas de Centroamérica: Después de separarse de México, Guatemala formó parte de la Federación de las Provincias Unidas de Centroamérica, junto con Honduras, El Salvador, Nicaragua y Costa Rica. Sin embargo, esta federación se disolvió en 1839 debido a conflictos internos.</li>
+                <br>
+                <li>Influencias extranjeras: La independencia de Guatemala fue influenciada por otros movimientos revolucionarios, como la Revolución Francesa, la independencia de Estados Unidos y las guerras independentistas de América del Sur.</li>
+                <br>
+                <li>La Acta de Independencia en 18 días: Aunque la independencia fue declarada el 15 de septiembre de 1821, algunas regiones como Quetzaltenango y Chiapas no se enteraron hasta 18 días después debido a las dificultades en las comunicaciones de la época.
+            <br>
+           </ul>
+        </aside>
+    </div>
+
+    <footer>
+        Antonio Molina - Página web sobre Petén                                                                                         C4A
+    </footer>
+</body>
+<script>
+        // Obtener el elemento de audio y los botones
+        var audio = document.getElementById("musica-fondo");
+        var botonIniciar = document.getElementById("iniciar-musica");
+        var botonMute = document.getElementById("boton-mute");
+        var subirVolumen = document.getElementById("subir-volumen");
+        var bajarVolumen = document.getElementById("bajar-volumen");
+
+        // Función para iniciar la música al hacer clic
+        botonIniciar.addEventListener("click", function () {
+            audio.play(); // Inicia la reproducción manualmente
+            botonIniciar.style.display = "none"; // Oculta el botón de iniciar
+
+            // Muestra los controles de música
+            botonMute.style.display = "inline-block";
+            subirVolumen.style.display = "inline-block";
+            bajarVolumen.style.display = "inline-block";
+        });
+
+        // Función para alternar entre silenciar y activar sonido
+        botonMute.addEventListener("click", function () {
+            if (audio.muted) {
+                audio.muted = false;
+                botonMute.textContent = "🔇 Silenciar";
+            } else {
+                audio.muted = true;
+                botonMute.textContent = "🔊 Activar Sonido";
+            }
+        });
+
+        // Función para subir el volumen
+        subirVolumen.addEventListener("click", function () {
+            if (audio.volume < 1.0) { // El volumen máximo es 1.0
+                audio.volume += 0.1; // Incrementa el volumen
+                console.log("Volumen: " + audio.volume.toFixed(1)); // Muestra el volumen actual
+            }
+        });
+
+        // Función para bajar el volumen
+        bajarVolumen.addEventListener("click", function () {
+            if (audio.volume > 0.0) { // El volumen mínimo es 0.0
+                audio.volume -= 0.1; // Reduce el volumen
+                console.log("Volumen: " + audio.volume.toFixed(1)); // Muestra el volumen actual
+            }
+        });
+    </script>
+</html>
+</html>

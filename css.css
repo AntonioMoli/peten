@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+html {
+    background-color: #F5E3C8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: #4CAF50; 
+    padding: 10px; 
+    text-align: center; 
+}
+h1 {
+    color: #ffdc00;
+    background-color: #2C5F2D;
+    text-align: center;
+    font-size: 100px;
+    font-family: "Fredoka", sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    text-align: center;
+    background-color: #2C5F2D;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #276A73;
+    color: #66cc66;
+    border: 1px solid rgb(100, 100, 0);
+    text-shadow: 0px 1px white;
+    width: 180px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 1px 1px darkGreen, inset 0 1px 0 honeyDew;
+    margin: 5px;
+}
+
+nav a:hover {
+    background-image: linear-gradient(to top, red, blue);
+}
+
+nav a:visited {
+    color: #66cc66; 
+}
+
+.contenedor {
+    display: flex; /* Es flexible para dejar alinear mas objetos */
+    padding: 20px; 
+}
+
+#Seccion1 {
+    width: 70%; 
+    background-color: #F5F5DC;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    color: #2E8B57;
+    padding: 20px; 
+}
+
+aside {
+    width: 25%; 
+    background-color: #E0E0E0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    color: #2E8B57;
+    padding: 20px;
+    margin-left: 20px; 
+    align-self: flex-start; /* Caja flexible que hace que los objetos se puedan alinear en la misma linea */
+}
+
+footer {
+    background-color: #8C4A2F;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Deja el footer fijo */
+    width: 100%;
+    bottom: 0;
+}
+
+h2 {
+    color: #276A73;
+}
+
+p, ol, ul {
+    color: #8C4A2F;
+    text-align: justify;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px; 
+    margin: 20px 50px 20px 10px; 
+
+}
+
+h3 {
+    color: #2E8B57;
+}
+
+a {
+    color: blue; 
+    text-decoration: none; 
+}
+
+a:visited {
+    color: purple; 
+}
+
+a:hover {
+    color: red; 
+}
+.video-section {
+    background-color: #F5F5DC; 
+    padding: 20px; 
+    text-align: center;
+    margin-top: 20px; 
+}
+
+iframe {
+    border: 2px solid #4CAF50; 
+}
+
+.audio-controls {
+    background-color: #2C5F2D; /* Color verde para el contenedor de audio */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.audio-controls button {
+    margin: 0 5px; /* Margen entre los botones */
+    padding: 10px 15px; /* Espaciado interno de los botones */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    background-color: #F5E3C8;
+}
+
+.audio-controls button:hover {
+    background-color: #45a049; /* Cambia el color al pasar el mouse */
+    color: white; /* Cambia el texto a blanco al pasar el mouse */
+}
